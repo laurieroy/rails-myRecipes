@@ -5,5 +5,9 @@ This is book of recipes. The MPV version will have a list of recipes by register
 Add-ons - categories so can search by ingredients
 Allow users to make their own copy of the cookbook and modify ingredients/amounts.
 Allow more than one photo 
+Have top 50 arrange by image or list
+
+***
 
 
+kinda doing a parallel ~follow  rspec and packt stuff...
