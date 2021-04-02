@@ -1,5 +1,7 @@
 {
   "name": "my_recipes",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap-sass": "^3.4.1"
+  }
 }

@@ -9,5 +9,6 @@ Have top 50 arrange by image or list
 
 ***
 
+Decisions: Since using Rails 5, do I want to use webpack or sprockets?
 
 kinda doing a parallel ~follow  rspec and packt stuff...

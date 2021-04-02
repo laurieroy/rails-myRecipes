@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>MyRecipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,8 +11,17 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <header>
+      <%= render "layouts/navigation" %>
+    </header>
+    <main role="main">
+      <%= render "layouts/notices" %>
+
+    <div class="container">
+       <%= yield %>
+    </div>
+      <%= render "layouts/footer" %>
+     
+    </main>
   </body>
 </html>

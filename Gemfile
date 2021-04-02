@@ -63,5 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.6.0'
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'devise-bootstrapped', github: 'excid3/devise-bootstrapped', branch: 'bootstrap4'
+gem 'jquery-rails'
 gem 'name_of_person', '~> 1.1'
 gem 'simple_form', '~> 5.1'
