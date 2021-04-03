@@ -7,5 +7,8 @@ class User < ApplicationRecord
 
   has_person_name
 
-  validates_presence_of  :email
+  validates :email, presence: true
+  validates :name, presence: true, length: { in: 2..30 }
+
+  has_many :recipes
 end
