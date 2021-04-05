@@ -3,8 +3,10 @@ require 'rails_helper'
 RSpec.describe Recipe, type: :model do
 	describe "Creation" do
 		before do
+			@user = User.create!(name: "tester", email: "test@example.com",  password: "password", password_confirmation: "password")
+			# @recipe = Recipe.create(name: "some name", description: "Some Description")
+			@recipe = @user.recipes.build(name: "some name", description: "Some Description that should be long enough")
 			
-			@recipe = Recipe.create(name: "some name", description: "Some Description")
       # @recipe = FactoryBot.create(:recipe)
 		end
 		
@@ -42,8 +44,8 @@ RSpec.describe Recipe, type: :model do
 			expect(@recipe).to_not be_valid
 		end
 
-		it "has a description longer than 25 characters" do
-			@recipe.description = "a" * 25
+		it "has a description that is 25 or more characters" do
+			@recipe.description = "a" * 24
 			expect(@recipe).to_not be_valid
 		end
 
